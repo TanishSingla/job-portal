@@ -41,8 +41,7 @@ const userSchema = new mongoose.Schema({
     verificationEmailToken: String,
     verificationEmailExpire: Date,
     verificationMobileToken: {
-        type: String,
-        default: "1111"
+        type: String
     },
     verificationMobileExpire: Date
 }, { timestamps: true });
