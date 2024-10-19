@@ -157,7 +157,7 @@ exports.verifymobile = catchAsyncError(async (req, resp, next) => {
     // if (user?.verificationMobileToken !== mobileToken) {
     //     return next(new ErrorHandler("Invalid mobile verification token", 400));
     // }
-    if (user?.verificationMobileToken !== "1111") {
+    if (mobileToken !== "1111") {
         return next(new ErrorHandler("Invalid mobile verification token", 400));
     }
 
