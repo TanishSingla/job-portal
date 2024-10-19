@@ -2,7 +2,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 const mongoose = require('mongoose');
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
 const connectDB = require('./lib/db');
 const cookieParser = require('cookie-parser');
