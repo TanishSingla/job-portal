@@ -22,7 +22,7 @@ const VerifyPage = () => {
         e.preventDefault();
         try {
             await verifyMobile({ id, mobileToken: mobileOtp });
-            setIsMobileVerifiedState(true);
+            setIsMobileVerifiedState(isMobileVerified);
         } catch (error) {
             console.error("Error verifying mobile:", error);
         }
@@ -32,7 +32,7 @@ const VerifyPage = () => {
         e.preventDefault();
         try {
             await verifyEmail({ id, emailToken: emailOtp });
-            setIsEmailVerifiedState(true);
+            setIsEmailVerifiedState(isEmailVerified);
         } catch (error) {
             console.error("Error verifying email:", error);
         }
