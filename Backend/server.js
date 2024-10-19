@@ -1,6 +1,6 @@
 const dotenv = require('dotenv');
 dotenv.config();
-
+const mongoose = require('mongoose');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -38,6 +38,14 @@ app.get("*", (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server Running on Port ${PORT}`);
-    connectDB();
+    // connectDB();
 });
+
+mongoose
+    .connect(process.env.MONGODB_URI, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
+    .then(() => console.log("database connection successful"))
+    .catch((err) => console.log(err));
 
