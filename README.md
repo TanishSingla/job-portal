@@ -2,6 +2,11 @@
 
 This is a full-stack job portal application with separate frontend and backend environments. The project uses Twilio for mobile OTP verification, and node mailer for emails.
 
+#### 1) Here you can post the jobs.
+#### 2) Can apply on jobs.
+#### 3) Can send job notification to multiple users at same time.
+#### 4) Can create job posts.
+
 ## Installation
 
 Before running this project, ensure that you have Node.js, npm, and MongoDB installed on your machine.
